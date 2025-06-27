@@ -1,0 +1,22 @@
+.Networkheader{
+  text-align: center;
+  margin-top: 5rem;
+}
+.Networkheader p{
+  color: #4F5665;
+}
+.networkimage{
+  background-image: url("../assets/HugeGlobal.png");
+  width: 1060px;
+  height: 540px;
+  margin-top: 5rem;
+  margin-left: 15rem;
+  margin-bottom: 5rem;
+}
+.sponserimage{
+  background-image: url("../assets/Sponsored.png");
+  width: 1135px;
+  height: 210px;
+  margin-left: 10rem;
+  margin-bottom: 5rem;
+}

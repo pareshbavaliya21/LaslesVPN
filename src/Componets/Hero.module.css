@@ -1,0 +1,92 @@
+.hero{
+  height: 400px;
+  margin-top: 20px;
+  /* margin-left: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.herocontain{
+  width: 600px;
+  height: 250px;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.herocontain a{
+  height: 25px;
+  width: 250px;
+  color: white;
+  background-color: #F53855;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 2rem;
+  text-align: center;
+}
+.herocontain h1{
+  margin-left: 2rem;
+  width: 500px;
+  
+}
+.herocontain p{
+  margin-left: 2rem;
+}
+.heroimage{
+  width: 612px;
+  height: 383px;
+  /* background-color: #F53855; */
+  background-image: url("../assets/Illustration1.png");
+}
+
+.infocontainer{
+  height: 200px;
+  width: 1140px;
+  margin-left: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+.info{
+  /* width: 30px; */
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.icon1{
+  background-image: url("../assets/Icon/user.png");
+  height: 60px;
+  width: 60px;
+  background-repeat: no-repeat;
+}
+.icon2{
+  background-image: url("../assets/Icon/location.png");
+  height: 60px;
+  width: 60px;
+  background-repeat: no-repeat;
+}
+.icon3{
+  background-image: url("../assets/Icon/Server.png");
+  height: 60px;
+  width: 60px;
+  background-repeat: no-repeat;
+}
+.text{
+  color: #4F5665;
+}
+
+.heroimage2{
+  width: 612px;
+  height: 383px;
+  /* background-color: #F53855; */
+  background-image: url("../assets/Illustration2.png");
+}
+.groupicon{
+  height: 30px;
+  background-image: url("../assets/Group1120.png");
+  background-repeat: no-repeat;
+  margin-left: 25px;
+  margin-top: 10px;
+}

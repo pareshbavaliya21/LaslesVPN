@@ -1,0 +1,53 @@
+.footercontainer{
+display: flex;
+justify-content: space-around;
+align-items: flex-start;  
+margin-top: 10rem;
+/* margin-bottom: 5rem; */
+background-color:  rgb(230, 228, 228);
+padding:3rem;
+padding-top: 10rem;
+}
+.footerlogo{
+  height: 37px;
+  width: 149px;
+  background-image: url("../assets/Logo.png");
+}
+.footercontainer li{
+  font-size: large;
+  color: #4F5665;
+}
+.footercontainer lh{
+  font-size: large;
+}
+
+.subscriptioncontainer{
+  width: 1140px;
+  height: 233px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #4F5665;
+  border-radius: 1rem;
+  margin-top: -32rem;
+margin-left: 10rem;  
+background-color: white;
+}
+.subscriptiontext{
+  margin-left: 2rem;
+}
+.subscriptiontext p{
+  font-size: small;
+  color: #4F5665;
+}
+.subscriptionbutton{
+  margin-right: 2rem;
+}
+.subscriptionbutton a{
+  width: 250px;
+  height: 86px;
+  background-color: #F53855;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: white;
+}
