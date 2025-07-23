@@ -32,47 +32,35 @@ Follow these steps to run the project locally:
 
 ```bash
 git clone <your-repo-url>
-2. Navigate to the Project Directory
 ```
 
+### 2. Navigate to the Project Directory
+
 ```bash
-Copy
-Edit
 cd LaslesVPN
-3. Install Dependencies
+```
+
+### 3. Install Dependencies
+
 Make sure you have Node.js installed, then run:
-```
 
 ```bash
-Copy
-Edit
 npm install
-4. Start the Development Server
 ```
 
+### 4. Start the Development Server
+
 ```bash
-Copy
-Edit
 npm run dev
 ```
 
 The application will be available at http://localhost:3000 (or the port shown in your terminal).
 
-Scripts
-Here are the available scripts:
-
-npm run dev: Start the development server.
-
-npm run build: Create a production build.
-
-npm run lint: Run ESLint to check code style.
+---
 
 Folder Structure
 
 ```
-ruby
-Copy
-Edit
 LaslesVPN/
 ├── node_modules/              # Project dependencies
 ├── public/                    # Static public assets
@@ -102,6 +90,8 @@ LaslesVPN/
 ├── package.json               # Project metadata and dependencies
 ```
 
+---
+
 Contributing
 Contributions are welcome! Feel free to fork the repository and submit a pull request.
 
@@ -113,19 +103,6 @@ Happy Coding! 🚀
 Screen Layout
 
 1. Home Page
-
-2. Example Component Preview
-
-Replace these images and paths with your own project screenshots.
-
-yaml
-Copy
-Edit
+   ![Home Page](public/Home_Page.png)
 
 ---
-
-If you want, I can generate the `README.md` file for you with this content ready to download! Just let me know.
-
-```
-
-```
