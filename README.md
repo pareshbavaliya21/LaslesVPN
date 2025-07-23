@@ -102,7 +102,8 @@ Happy Coding! 🚀
 
 Screen Layout
 
-1. Home Page
-   ![Home Page](public/Home_Page.png)
+### 1. Home Page
+
+![Home Page](public/Home_Page.png)
 
 ---
