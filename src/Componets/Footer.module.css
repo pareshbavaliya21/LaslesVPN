@@ -1,27 +1,33 @@
-.footercontainer{
-display: flex;
-justify-content: space-around;
-align-items: flex-start;  
-margin-top: 10rem;
-/* margin-bottom: 5rem; */
-background-color:  rgb(230, 228, 228);
-padding:3rem;
-padding-top: 10rem;
+.footercontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 10rem;
+  background-color: rgb(230, 228, 228);
+  padding: 3rem;
+  padding-top: 10rem;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
-.footerlogo{
+
+.footerlogo {
   height: 37px;
   width: 149px;
   background-image: url("../assets/Logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.footercontainer li{
+
+.footercontainer li {
   font-size: large;
   color: #4F5665;
 }
-.footercontainer lh{
+
+.footercontainer lh {
   font-size: large;
 }
 
-.subscriptioncontainer{
+.subscriptioncontainer {
   width: 1140px;
   height: 233px;
   display: flex;
@@ -30,24 +36,72 @@ padding-top: 10rem;
   border: 1px solid #4F5665;
   border-radius: 1rem;
   margin-top: -32rem;
-margin-left: 10rem;  
-background-color: white;
+  margin-left: 10rem;
+  background-color: white;
+  padding: 2rem;
+  box-sizing: border-box;
 }
-.subscriptiontext{
+
+.subscriptiontext {
   margin-left: 2rem;
 }
-.subscriptiontext p{
+
+.subscriptiontext p {
   font-size: small;
   color: #4F5665;
 }
-.subscriptionbutton{
+
+.subscriptionbutton {
   margin-right: 2rem;
 }
-.subscriptionbutton a{
+
+.subscriptionbutton a {
   width: 250px;
   height: 86px;
   background-color: #F53855;
   border-radius: 1rem;
   padding: 1rem;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+  .subscriptioncontainer {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .subscriptiontext {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .subscriptionbutton {
+    margin-right: 0;
+  }
+
+  .subscriptionbutton a {
+    width: 100%;
+    height: auto;
+    padding: 0.8rem;
+  }
+
+  .footercontainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .footercontainer li {
+    margin-bottom: 0.5rem;
+  }
 }

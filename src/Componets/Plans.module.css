@@ -1,92 +1,145 @@
-.mainplan{
+.mainplan {
   background-color: rgb(230, 228, 228);
   margin-top: 5rem;
 }
-.planeheader{
+
+.planeheader {
   text-align: center;
   margin-top: 5rem;
   background-color: rgb(230, 228, 228);
 }
-.mainplan .planeheader h2{
+
+.mainplan .planeheader h2 {
   margin-top: 5rem;
   padding-top: 5rem;
 }
-.allPlans{
+
+.allPlans {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 5rem;
+  gap: 2rem;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
 }
-.plancontainer{
-  height: 680px;
+
+.plancontainer,
+.plancontainerlast {
+  height: auto; /* allow height to adjust */
   width: 330px;
-  background-color: white ;
+  background-color: white;
   margin-top: 5rem;
-  margin-left: 5rem;
+  border-radius: 0.8rem;
+  margin-bottom: 5rem;
+  box-sizing: border-box;
+  padding-bottom: 2rem;
+}
+
+.plancontainer {
   border: 1px solid gainsboro;
-  border-radius: 0.8rem;
-  margin-bottom: 5rem;
-}
-.plancontainerlast{
-  height: 680px;
-  width: 330px;
-  background-color: white ;
-  margin-top: 5rem;
   margin-left: 5rem;
+}
+
+.plancontainerlast {
   border: 1px solid #F53855;
-  border-radius: 0.8rem;
-  margin-bottom: 5rem;
+  margin-left: 5rem;
 }
-.plan{
-display: flex;
-justify-content: flex-start;
-align-items: center;
-flex-direction: column;
-gap: 2rem;
+
+.plan {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
-.planimage{
+
+.planimage,
+.planimage2,
+.planimage3 {
   height: 165px;
   width: 145px;
+  margin-top: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.planimage {
   background-image: url("../assets/Illustration/Free.png");
-  margin-top: 3rem;
 }
-.planimage2{
-  height: 165px;
-  width: 145px;
+
+.planimage2 {
   background-image: url("../assets/Illustration/Standard.png");
-  margin-top: 3rem;
 }
-.planimage3{
-  height: 165px;
-  width: 145px;
+
+.planimage3 {
   background-image: url("../assets/Illustration/Premium.png");
-  margin-top: 3rem;
 }
-.plan ul li{
+
+.plan ul li {
   margin-top: 1rem;
   color: #4F5665;
 }
-.plan a{
+
+.plan a {
   width: 10rem;
   text-align: center;
-  /* background-color: #4F5665; */
   color: #F53855;
   padding: 0.8rem;
   border: 1px solid #F53855;
   border-radius: 1.5rem;
+  text-decoration: none;
+  display: inline-block;
 }
-.plancontainerlast a{
-  width: 10rem;
-  text-align: center;
+
+.plancontainerlast a {
   background-color: #F53855;
   color: white;
-  padding: 0.8rem;
-  border: 1px solid #F53855;
-  border-radius: 1.5rem;
 }
-.planvaluse1{
+
+/* Margins for plan values */
+.planvaluse1 {
   margin-top: 3.7rem;
 }
-.planvaluse2{
+
+.planvaluse2 {
   margin-top: 2rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+  .allPlans {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .plancontainer,
+  .plancontainerlast {
+    width: 90%;
+    margin-left: 0;
+    height: auto;
+  }
+
+  .planimage,
+  .planimage2,
+  .planimage3 {
+    width: 120px;
+    height: 140px;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .plan a,
+  .plancontainerlast a {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .planeheader h2 {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
 }

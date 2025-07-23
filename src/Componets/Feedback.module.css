@@ -1,17 +1,21 @@
-.feedbackheader{
+.feedbackheader {
   text-align: center;
   margin-top: 5rem;
 }
-.feedbackheader p{
+
+.feedbackheader p {
   color: #4F5665;
 }
-.feedbackcontainer{
+
+.feedbackcontainer {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
-.feedback{
+
+.feedback {
   width: 400px;
   height: 200px;
   border: 1px solid #4F5665;
@@ -19,22 +23,50 @@
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-.feedbackboxheader{
+
+.feedbackboxheader {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
-.feedbackimage{
+
+.feedbackimage {
   height: 50px;
   width: 50px;
   border-radius: 50%;
   background-image: url("../assets/Ellipse175.png");
+  background-size: cover;
+  background-position: center;
 }
-.feedbackname p{
+
+.feedbackname p {
   color: #4F5665;
 }
-.feedbackbody p{
-  margin:1rem;
+
+.feedbackbody p {
+  margin: 1rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .feedbackcontainer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .feedback {
+    width: 90%;
+    height: auto;
+  }
+
+  .feedbackboxheader {
+    flex-direction: column;
+  }
+
+  .feedbackbody p {
+    margin: 1rem 0.5rem;
+  }
 }
